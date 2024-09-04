@@ -1,0 +1,47 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.container {
+  background-color: #f4f4f4;
+  padding: 20px;
+}
+
+.content {
+  padding: 20px;
+  font-size: clamp(10px, 2.5vw, 30px);
+  line-height: 1.6;
+}
+
+h1 {
+  font-size: 1.8em;
+  margin-bottom: 20px;
+}
+
+p {
+  margin-bottom: 15px;
+  font-size: 1em;
+}
+
+.options {
+  list-style-type: none;
+  margin-left: 20px;
+  margin-bottom: 20px;
+}
+
+.answer h2 {
+  font-size: 1.5em;
+  margin-bottom: 10px;
+}
+
+.answer p {
+  margin-bottom: 10px;
+}
+
+@media print {
+  .answer {
+    display: none;
+  }
+}
