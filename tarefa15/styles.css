@@ -4,13 +4,168 @@
   box-sizing: border-box;
 }
 
-.image-container {
-  width: 100%;
-  overflow: hidden;
+body {
+  font-family: Arial, sans-serif;
+  font-size: clamp(10px, 2vw, 30px);
+  line-height: 1.6;
+  padding: 20px;
+  background-color: #ffffff;
+  color: #000000;
 }
 
-.responsive-image {
-  width: 100vw;
+
+@media (prefers-color-scheme: dark) {
+  body {
+    background-color: #181818;
+    color: #e0e0e0;
+  }
+}
+
+header {
+  background-color: #00aaff;
+  padding: 10px;
+  color: white;
+}
+
+.menu {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.menu-icon {
+  display: none;
+  flex-direction: column;
+  cursor: pointer;
+}
+
+.menu-icon div {
+  width: 25px;
+  height: 3px;
+  background-color: white;
+  margin: 4px 0;
+}
+
+.menu-links a {
+  margin-right: 20px;
+  text-decoration: none;
+  color: white;
+  font-size: 1.2em;
+}
+
+@media (max-width: 768px) {
+  .menu-links {
+    display: none;
+  }
+
+  .menu-icon {
+    display: flex;
+  }
+}
+
+.container {
+  max-width: 1200px;
+  margin: 20px auto;
+}
+
+.product-details {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.product-images .main-image {
+  width: 300px;
   height: auto;
-  display: block;
+}
+
+.thumbnail-gallery {
+  display: flex;
+  gap: 10px;
+  margin-top: 10px;
+}
+
+.thumbnail-gallery img {
+  width: 50px;
+  height: 50px;
+  cursor: pointer;
+}
+
+.product-info {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.product-info h1 {
+  font-size: 2em;
+}
+
+.price {
+  font-size: 1.5em;
+  color: #00cc00;
+}
+
+.description {
+  margin: 20px 0;
+}
+
+.specifications {
+  list-style-type: none;
+}
+
+.specifications li {
+  margin-bottom: 5px;
+}
+
+.related-products {
+  margin-top: 40px;
+}
+
+.related-items {
+  display: flex;
+  gap: 20px;
+  justify-content: space-between;
+}
+
+.related-product {
+  text-align: center;
+}
+
+.related-product img {
+  width: 100px;
+  height: auto;
+}
+
+.user-comments {
+  margin-top: 40px;
+}
+
+.comment {
+  background-color: #f4f4f4;
+  padding: 10px;
+  border-radius: 8px;
+  margin-bottom: 10px;
+}
+
+@media (min-width: 1024px) {
+  .product-details {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .product-info {
+    text-align: left;
+    margin-left: 20px;
+  }
+
+  .related-items {
+    flex-direction: row;
+  }
+}
+
+@media (prefers-color-scheme: dark) {
+  .comment {
+    background-color: #2a2a2a;
+    color: #e0e0e0;
+  }
 }

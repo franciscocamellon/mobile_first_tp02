@@ -4,13 +4,175 @@
   box-sizing: border-box;
 }
 
-.image-container {
-  width: 100%;
-  overflow: hidden;
+body {
+  font-family: Arial, sans-serif;
+  font-size: clamp(10px, 2vw, 30px);
+  line-height: 1.6;
+  background-color: #ffffff;
+  color: #000000;
 }
 
-.responsive-image {
-  width: 100vw;
+
+@media (prefers-color-scheme: dark) {
+  body {
+    background-color: #181818;
+    color: #e0e0e0;
+  }
+}
+
+header {
+  background-color: #00aaff;
+  padding: 10px;
+  color: white;
+}
+
+.menu {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.menu-icon {
+  display: none;
+  flex-direction: column;
+  cursor: pointer;
+}
+
+.menu-icon div {
+  width: 25px;
+  height: 3px;
+  background-color: white;
+  margin: 4px 0;
+}
+
+.menu-links a {
+  margin-right: 20px;
+  text-decoration: none;
+  color: white;
+  font-size: 1.2em;
+}
+
+@media (max-width: 768px) {
+  .menu-links {
+    display: none;
+  }
+
+  .menu-icon {
+    display: flex;
+  }
+}
+
+.container {
+  max-width: 1200px;
+  margin: 20px auto;
+}
+
+.video-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.video-highlight {
+  width: 100%;
+  max-width: 800px;
   height: auto;
-  display: block;
+}
+
+.video-info {
+  margin-top: 20px;
+  text-align: center;
+}
+
+.video-info h1 {
+  font-size: 2em;
+}
+
+.author {
+  color: gray;
+}
+
+.video-actions button {
+  margin: 10px;
+  padding: 10px 15px;
+  background-color: #00aaff;
+  color: white;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.video-description {
+  margin-top: 20px;
+  text-align: left;
+  max-width: 800px;
+}
+
+.ad-section {
+  margin-top: 40px;
+  text-align: center;
+}
+
+.ad-banner {
+  width: 100%;
+  max-width: 600px;
+  height: auto;
+}
+
+.related-videos {
+  margin-top: 40px;
+}
+
+.related-list {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.related-item {
+  text-align: center;
+  width: 150px;
+}
+
+.related-item img {
+  width: 100%;
+  height: auto;
+}
+
+.user-comments {
+  margin-top: 40px;
+}
+
+.comment {
+  background-color: #f4f4f4;
+  padding: 10px;
+  border-radius: 8px;
+  margin-bottom: 10px;
+}
+
+@media (min-width: 1024px) {
+  .video-section {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .video-info {
+    text-align: left;
+    margin-left: 20px;
+  }
+
+  .video-actions {
+    display: flex;
+    justify-content: flex-start;
+  }
+
+  .related-list {
+    justify-content: flex-start;
+  }
+
+  .user-comments {
+    max-width: 800px;
+    margin: 40px auto;
+  }
 }

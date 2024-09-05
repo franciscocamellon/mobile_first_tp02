@@ -1,17 +1,98 @@
 <!DOCTYPE html>
 <html lang="br">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <title>Tarefa 01</title>
-    <link rel="stylesheet" href="styles.css" />
-  </head>
-  <body>
-    <div class="image-container">
-      <img class="responsive-image" src="images\small-2.jpg" />
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <title>Tarefa 15</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+
+<body>
+
+  <header>
+    <div class="menu">
+      <div class="menu-icon">
+        <div></div>
+        <div></div>
+        <div></div>
+      </div>
+      <nav class="menu-links">
+        <a href="#">Home</a>
+        <a href="#">Produtos</a>
+        <a href="#">Sobre</a>
+        <a href="#">Contato</a>
+      </nav>
+    </div>
+  </header>
+
+  <div class="container">
+    <div class="product-details">
+      <div class="product-images">
+        <img src="images\products\product-1.jpg" alt="Produto Principal" class="main-image">
+        <div class="thumbnail-gallery">
+          <img src="images\products\product-2.jpg" alt="Produto 1">
+          <img src="images\products\product-3.jpg" alt="Produto 2">
+          <img src="images\products\product-4.jpg" alt="Produto 3">
+        </div>
+      </div>
+
+      <div class="product-info">
+        <h1>Cadeira de luxo</h1>
+        <p class="price">R$ 199,90</p>
+        <p class="description">Descrição breve sobre o produto, suas funcionalidades e benefícios. Este produto é ótimo
+          para diferentes necessidades e se destaca pela sua qualidade.</p>
+
+        <h3>Especificações</h3>
+        <ul class="specifications">
+          <li>Cor: Preto</li>
+          <li>Tamanho: 30cm x 20cm</li>
+          <li>Peso: 1,5kg</li>
+          <li>Material: Plástico resistente</li>
+        </ul>
+      </div>
     </div>
 
-    <script src="script.js"></script>
-  </body>
+    <section class="related-products">
+      <h2>Produtos Relacionados</h2>
+      <div class="related-items">
+        <div class="related-product">
+          <img src="images\products\product-5.jpg" alt="Produto Relacionado 1">
+          <p>Produto 1</p>
+          <p>R$ 159,90</p>
+        </div>
+        <div class="related-product">
+          <img src="images\products\product-6.jpg" alt="Produto Relacionado 2">
+          <p>Produto 2</p>
+          <p>R$ 179,90</p>
+        </div>
+        <div class="related-product">
+          <img src="images\products\product-1.jpg" alt="Produto Relacionado 3">
+          <p>Produto 3</p>
+          <p>R$ 149,90</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="user-comments">
+      <h2>Comentários de Usuários</h2>
+      <div class="comment">
+        <p><strong>João</strong> <em>(12/08/2024)</em></p>
+        <p>Produto excelente, superou minhas expectativas. Recomendo a todos!</p>
+      </div>
+      <div class="comment">
+        <p><strong>Maria</strong> <em>(10/08/2024)</em></p>
+        <p>Muito bom, mas poderia ter mais opções de cores. Ainda assim, ótimo custo-benefício.</p>
+      </div>
+      <div class="comment">
+        <p><strong>Carlos</strong> <em>(05/08/2024)</em></p>
+        <p>Produto de qualidade, entrega rápida e preço justo. Voltaria a comprar.</p>
+      </div>
+    </section>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+
 </html>

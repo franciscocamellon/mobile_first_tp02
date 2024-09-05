@@ -1,17 +1,102 @@
 <!DOCTYPE html>
 <html lang="br">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <title>Tarefa 01</title>
-    <link rel="stylesheet" href="styles.css" />
-  </head>
-  <body>
-    <div class="image-container">
-      <img class="responsive-image" src="images\small-2.jpg" />
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <title>Tarefa 16</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+
+<body>
+  <header>
+    <div class="menu">
+      <div class="menu-icon">
+        <div></div>
+        <div></div>
+        <div></div>
+      </div>
+      <nav class="menu-links">
+        <a href="#">Início</a>
+        <a href="#">Vídeos</a>
+        <a href="#">Assinaturas</a>
+        <a href="#">Histórico</a>
+      </nav>
+    </div>
+  </header>
+
+  <div class="container">
+    <div class="video-section">
+
+      <video controls class="video-highlight">
+        <source src="images\explore.webm" type="video/mp4">
+        Seu navegador não suporta a reprodução de vídeo.
+      </video>
+
+      <div class="video-info">
+        <h1>Título do Vídeo</h1>
+        <p class="author">Autor: Nome do Autor</p>
+
+        <div class="video-actions">
+          <button>Curtir</button>
+          <button>Compartilhar</button>
+          <button>Salvar</button>
+          <button>Denunciar</button>
+        </div>
+
+        <div class="video-description">
+          <h3>Descrição</h3>
+          <p>Esta é a descrição do vídeo, que apresenta informações importantes sobre o conteúdo apresentado. O vídeo
+            trata de temas relevantes e oferece uma ótima experiência ao espectador.</p>
+        </div>
+      </div>
     </div>
 
-    <script src="script.js"></script>
-  </body>
+    <div class="ad-section">
+      <h3>Propaganda</h3>
+      <img src="images\banner.png" alt="Propaganda" class="ad-banner">
+    </div>
+
+    <section class="related-videos">
+      <h2>Vídeos Relacionados</h2>
+      <div class="related-list">
+        <div class="related-item">
+          <img src="images\small-1.jpg" alt="Vídeo Relacionado 1">
+          <p>Nome do Vídeo 1</p>
+          <p>Autor 1</p>
+        </div>
+        <div class="related-item">
+          <img src="images\small-2.jpg" alt="Vídeo Relacionado 2">
+          <p>Nome do Vídeo 2</p>
+          <p>Autor 2</p>
+        </div>
+        <div class="related-item">
+          <img src="images\small-3.jpg" alt="Vídeo Relacionado 3">
+          <p>Nome do Vídeo 3</p>
+          <p>Autor 3</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="user-comments">
+      <h2>Comentários de Usuários</h2>
+      <div class="comment">
+        <p><strong>João</strong> <em>(12/08/2024)</em></p>
+        <p>Vídeo excelente, recomendo a todos!</p>
+      </div>
+      <div class="comment">
+        <p><strong>Maria</strong> <em>(10/08/2024)</em></p>
+        <p>Gostei muito, ótima qualidade e conteúdo interessante.</p>
+      </div>
+      <div class="comment">
+        <p><strong>Carlos</strong> <em>(05/08/2024)</em></p>
+        <p>Bom vídeo, mas poderia ser mais detalhado em alguns pontos.</p>
+      </div>
+    </section>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+
 </html>
